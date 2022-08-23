@@ -397,7 +397,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 33.33333%;
 }
 
-.project .nav.nav-pills .nav-link {
+.project,
+.nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
@@ -410,9 +411,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
+  cursor: pointer;
 }
 
-.project .nav.nav-pills .nav-link::before {
+.project .nav-pills .nav-link::before {
   content: "";
   position: absolute;
   width: 0;
@@ -424,11 +426,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
-.project .nav.nav-pills .nav-link.active::before {
+.project nav .nav-pills .nav-link.active::before {
   width: 100% !important;
 }
 
-.project .nav.nav-pills .nav-link.active {
+.project nav .nav-pills .nav-link.active {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
@@ -524,7 +526,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #121212;
   padding: 85px 125px;
   margin-bottom: 80px;
-  margin-top: -122px;
+  margin-top: -18px;
 }
 
 .newsletter h3 {
@@ -574,6 +576,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: transparent;
   border: 0;
   padding: 0 15px;
+  border: none;
+  outline: none;
+  font-family: Aliquam;
 }
 
 .new-email-bx Button {
@@ -583,6 +588,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 19px;
+}
+
+@media screen and (max-width: 650px) {
+  .new-email-bx Button {
+    padding: 10px 26px;
+  }
 }
 
 .footer img {

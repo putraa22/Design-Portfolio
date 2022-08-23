@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import LogoHome from "../Asset/img/logo-2.svg";
 import NavIcon1 from "../Asset/icon/facebook.svg";
@@ -50,15 +50,15 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <Nav.Link href="#">
                 <img src={NavIcon1} alt="facebook" />
-              </a>
-              <a href="#">
+              </Nav.Link>
+              <Nav.Link href="#">
                 <img src={NavIcon2} alt="github" />
-              </a>
-              <a href="#">
+              </Nav.Link>
+              <Nav.Link href="#">
                 <img src={NavIcon3} alt="instagram" />
-              </a>
+              </Nav.Link>
             </div>
             <button className="vvd" onClick={() => console.log("Connect")}>
               <span>Let's Connect</span>
