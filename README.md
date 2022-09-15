@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Demo Project Link : (https://my-personal-portfolio-mocha.vercel.app/)
+Demo Project Link : https://my-personal-portfolio-mocha.vercel.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
